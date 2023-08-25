@@ -1,1 +1,13 @@
-
+spring:
+  config.activate.on-profile: local
+  flyway:
+    enabled: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/matzip?useSSL=false&characterEncoding=utf8
+    username: matzip
+    password: password
